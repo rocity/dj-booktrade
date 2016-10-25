@@ -13,4 +13,17 @@
 
   angular
     .module('booktrade.config', []);
+
+  angular
+    .module('booktrade')
+    .run(run)
+
+  run.$inject = ['$http'];
+
+
+  function run($http) {
+    $http.defaults.xsrfHeaderName = 'X-CSRFToken';
+    $htto.defaults.xsrfCookieName = 'csrftoken';
+  }
+
 })();

@@ -4,7 +4,7 @@ from authentication.models import Account
 from authentication.permissions import IsAccountOwner
 from authentication.serializers import AccountSerializer
 
-class AccountViewSet(viewsets.ViewModelSet):
+class AccountViewSet(viewsets.ModelViewSet):
     lookup_field = 'username'
     queryset = Account.objects.all()
     serializer_class = AccountSerializer
@@ -21,7 +21,7 @@ class AccountViewSet(viewsets.ViewModelSet):
     def create(self, request):
         serializer = self.serializer_class(data=request.data)
 
-        if serializer = is_valid():
+        if serializer.is_valid():
             Account.objects.create_user(**serializer.validated_data)
 
             return Response(
