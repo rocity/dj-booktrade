@@ -1,4 +1,17 @@
+{% load compress %}
 {% load static %}
+
+    {% compress js %}
+    <script
+        type="text/javascript"
+        src="{% static "angular/angular.min.js" %}"></script>
+    <script
+        type="text/javascript"
+        src="angular-route/angular-route.min.js"></script>
+    <script
+        type="text/javascript"
+        src="angular-cookies/angular-cookies.min.js"></script>
+
     <script
         type="text/javascript"
         src="{% static "javascripts/booktrade.config.js" %}"></script>
@@ -14,3 +27,4 @@
     <script
         type="text/javascript"
         src="{% static "javascripts/authentication/controllers/register.controller.js" %}"></script>
+    {% endcompress %}

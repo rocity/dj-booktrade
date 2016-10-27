@@ -5,7 +5,7 @@
     .module('booktrade.authentication.controllers')
     .controller('RegisterController', RegisterController)
 
-  RegisterController$.inject = ['$location', '$scope', 'Authentication'];
+  RegisterController.$inject = ['$location', '$scope', 'Authentication'];
 
   function RegisterController($location, $scope, Authentication) {
     var vm = this;

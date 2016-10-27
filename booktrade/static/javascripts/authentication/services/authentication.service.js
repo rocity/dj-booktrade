@@ -2,7 +2,7 @@
   'use strict';
 
   angular
-    .module('thinkster.authentication.services')
+    .module('booktrade.authentication.services')
     .factory('Authentication', Authentication);
 
   Authentication.$inject = ['$cookies', '$http'];
