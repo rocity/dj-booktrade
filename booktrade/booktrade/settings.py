@@ -137,3 +137,6 @@ STATICFILES_FINDERS = (
 )
 
 AUTH_USER_MODEL = 'authentication.Account'
+
+COMPRESS_ENABLED = True
+COMPRESS_OFFLINE = True

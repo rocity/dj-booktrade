@@ -90,3 +90,4 @@ ENV/
 booktrade/booktrade/secrets.py
 *.sqlite3
 booktrade/node_modules/
+booktrade/staticfiles/
