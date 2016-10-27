@@ -89,3 +89,4 @@ ENV/
 .ropeproject
 booktrade/booktrade/secrets.py
 *.sqlite3
+booktrade/node_modules/
